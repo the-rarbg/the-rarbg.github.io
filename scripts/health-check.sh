@@ -65,5 +65,6 @@ then
   git config --global user.email 'hi@therarbg.com'
   git add -A --force public/status/
   git commit -am '[Automated] Update Health Check Logs'
+  git pull
   git push
 fi
