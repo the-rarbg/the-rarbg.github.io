@@ -36,7 +36,7 @@ const ServiceItem: FunctionComponent<ServiceItemProps> = ({ item }) => {
         let successCount = item.logs.filter((item)=> item.status === Status.OPERATIONAL).length
         return Math.round((successCount * 100) / 90);
     }
-    const generateLink = ({domain}) => {
+    const generateLink = ({ domain }) => {
         return `https://${domain}`
     }
 
