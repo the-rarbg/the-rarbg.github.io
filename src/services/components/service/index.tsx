@@ -38,7 +38,7 @@ const ServiceItem: FunctionComponent<ServiceItemProps> = ({ item }) => {
     }
 
     function generateLink(domain) {
-        return `https://${domain}`;
+        return domain
     }
 
     return (
