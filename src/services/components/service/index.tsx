@@ -37,7 +37,7 @@ const ServiceItem: FunctionComponent<ServiceItemProps> = ({ item }) => {
         return Math.round((successCount * 100) / 90);
     }
     const generateLink = ({ domain }) => {
-        return `https://${domain}`
+        return `https://${domain}`;
     }
 
     return (
