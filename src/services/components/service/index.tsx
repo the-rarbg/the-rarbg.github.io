@@ -41,8 +41,9 @@ const ServiceItem: FunctionComponent<ServiceItemProps> = ({ item }) => {
         <div className='mb-10'>
             <div className='flex'>
                 <Icon />
+                var domain = `https://${item.name}`
                 <div className="w-full flex justify-between items-baseline">
-                    <p className="ml-4 text-base font-semibold leading-6 text-gray-900"><a href="https://"{item.name}>{item.name}</a></p>
+                    <p className="ml-4 text-base font-semibold leading-6 text-gray-900"><a href={domain}>{item.name}</a></p>
                     <p className='text-xs text-gray-400 items-baseline	self-baseline'> {calculateUpTime()}% operational in last 90 days</p>
                 </div>
 
